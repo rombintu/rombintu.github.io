@@ -2,18 +2,19 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>mySite</title>
+    <title>ForLera</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div id="div">HELLO</div>
+	<div id="div1">Together:</div>
+	<div id="div2">HELLO</div>
 	<script>
 		let dateL = new Date(2018,8,16)
 		window.onload = function(){
 			window.setInterval(function(){
 				let now = new Date();
 				let dateBetween = now - dateL
-				let div = document.getElementById("div");
+				let div = document.getElementById("div2");
 				div.innerHTML = dateBetween;
 			})
 		}
