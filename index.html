@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="utf-8">
+    <title>mySite</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Hello world!</h1>
+	<div id="div">HELLO</div>
+	<script>
+		let dateL = new Date(2018,8,16)
+		window.onload = function(){
+			window.setInterval(function(){
+				let now = new Date();
+				let dateBetween = now - dateL
+				let div = document.getElementById("div");
+				div.innerHTML = dateBetween;
+			})
+		}
+	</script> 
 </body>
 </html>
+
+
